@@ -25,18 +25,6 @@ members:
     use graph somehow for key (p or q) and root
     array with
 
-main:
-
-    Scanner s = new Scanner(System.in);
-    s.useDelimiter("\\R");
-
-    String line = s.next();
-    int number = s.nextInt();
-    double v = s.nextDouble();
-
-    createSets();
-    operation();
-
 methods:
 
     public void createSets(int n, int m) {
@@ -76,8 +64,14 @@ methods:
            destroy it
    }
 
-    nrOfEle(int p){
+    for int i = 2 to line.length
 
-    }
 
-    sum(int p)
+
+
+
+----
+
+TODO
+
+- vad göra med variabeln "n"?

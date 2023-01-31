@@ -1,0 +1,77 @@
+input n och m
+
+n = number of ints
+m = number of commands
+
+1 p q
+2 p q
+3 p
+
+Each of the next m lines contains a command.
+
+operation 1: union the sets containing p and q if they're in disjoint sets,
+    otherwise ignore this command
+
+operation 2: move p to q. If already in same set, ignore this command.
+
+operation 3: return number and sum of elements
+
+initially the collections has n sets with {1}, {2}, {3}, ..., {n}
+
+---
+
+members:
+    use hashmap with root and set
+    use graph somehow for key (p or q) and root
+    array with
+
+methods:
+
+    public void createSets(int n, int m) {
+        for 1 to n
+            add
+    }
+
+    public void operation(int x){
+        switch 1, 2 och 3:
+            1:
+                union
+            2:
+                move
+            3:
+                sum
+                nrOfEle
+    }
+
+    public void union(int p, int q){
+        look up root variable with q
+            save root to a temp_set_key variable
+        look up correct set to move p to by using tem_set_key
+        merge with addAll()
+
+        if set with p as key has one element
+            destroy it
+        if set with q as key has one element
+            destroy it
+        }
+
+    public void move(int p, int q){
+        look up root variable with q
+            save to a temp_set_key variable
+        look up correct set to move p to by using tem_set_key
+            add p to correct set
+        if set with q as key has one element
+           destroy it
+   }
+
+    for int i = 2 to line.length
+
+
+
+
+
+----
+
+TODO
+
+- vad göra med variabeln "n"?

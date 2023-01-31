@@ -5,8 +5,17 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7518ba-e94b-40fd-9045-c5a58e05bc6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/src/AlmostUnionFind.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/src/pseudo" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/src/AlmostUnionFindCopy.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/twhite-task-15.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/twhite-task-15.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/AlmostUnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlmostUnionFind/AlmostUnionFind.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/UnionFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AlmostUnionFind.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlmostUnionFind.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/AlmostUnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/src/AlmostUnionFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/src/pseudo" beforeDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,7 +58,19 @@
     <property name="project.structure.proportion" value="0.0" />
     <property name="project.structure.side.proportion" value="0.0" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Application.AlmostUnionFind">
+    <configuration name="AlmostUnionFind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="AlmostUnionFind" />
+      <module name="AlmostUnionFind" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <configuration name="UnionFind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="UnionFind" />
       <module name="AlmostUnionFind" />
@@ -59,6 +80,7 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Application.AlmostUnionFind" />
         <item itemvalue="Application.UnionFind" />
       </list>
     </recent_temporary>
@@ -76,7 +98,17 @@
       <workItem from="1674988674232" duration="1727000" />
       <workItem from="1674999752351" duration="3113000" />
       <workItem from="1675002902000" duration="346000" />
-      <workItem from="1675057572272" duration="1581000" />
+      <workItem from="1675057572272" duration="2148000" />
+      <workItem from="1675068959514" duration="554000" />
+      <workItem from="1675074754927" duration="1061000" />
+      <workItem from="1675084734647" duration="4144000" />
+      <workItem from="1675099476920" duration="1000" />
+      <workItem from="1675099496483" duration="348000" />
+      <workItem from="1675104922244" duration="35000" />
+      <workItem from="1675144553315" duration="5025000" />
+      <workItem from="1675150462490" duration="688000" />
+      <workItem from="1675159015969" duration="595000" />
+      <workItem from="1675174453949" duration="594000" />
     </task>
     <servers />
   </component>
