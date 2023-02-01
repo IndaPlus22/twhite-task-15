@@ -1,90 +1,61 @@
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStreamReader;
 import java.util.*;
 
 public class AlmostUnionFind {
 
-    static HashMap<Integer, HashSet> setsMap = new HashMap();
-    static ArrayList<HashSet> rootsMap = new ArrayList<HashSet>();
     static int n, m;
+    static Kattio io = new Kattio(System.in, System.out);
 
-    public static void main(String[] args) throws IOException {
+    private HashMap<Integer, HashSet> setsMap;
+    private ArrayList<HashSet> rootsMap;
 
-        System.out.println("Please input shit");
+    public AlmostUnionFind(int n) {
+        setsMap = new HashMap();
+        rootsMap = new ArrayList<HashSet>();
 
-        Scanner sc = new Scanner(System.in);
-        //make input into an arraylist of chars that has no spaces
-        ArrayList<String> commands = new ArrayList<>();
-        while (sc.hasNext()) {
-            String line = sc.next();
-            String[] lineArray = line.split(" ");
-            for (String s : lineArray) {
-                commands.add(s);
-            }
-        }
-
-        System.out.println(commands);
-
-        int n = Integer.parseInt(commands.get(0));
-        //remove first element in the arraylist
-        commands.remove(0);
-        int m = Integer.parseInt(commands.get(0));
-        commands.remove(0);
-
-        //createMaps();
-        operations(commands);
-    }
-
-    static void createMaps() {
         for (int i = 1; i <= n; i++) {
             HashSet<Integer> set = new HashSet<>();
             set.add(i);
             setsMap.put(i, set);
-        }
+        }        
         for (int i = 1; i <= n; i++) {
             rootsMap.add(setsMap.get(i));
         }
+
     }
 
-    static void operations(ArrayList<String> commands) throws IOException {
-        int p, q = 0;
-        while (!commands.isEmpty()) {
-            int operation = Integer.parseInt(commands.get(0));
-            commands.remove(0);
+    public static void main(String[] args) {
+
+        n = io.getInt();
+        m = io.getInt();
+
+        AlmostUnionFind almostUnionFind = new AlmostUnionFind(n);
+
+        for (int i = 0; i < m; i++) {
+            int operation = io.getInt();
+            int p = io.getInt();
+            int q = io.getInt();
             switch (operation) {
                 case 1 -> {
-                    p = Integer.parseInt(commands.get(0));
-                    commands.remove(0);
-                    q = Integer.parseInt(commands.get(0));
-                    commands.remove(0);
-                    System.out.println("case 1: " + p + " " + q + " " + commands);
-                    //union(p, q);
+                    almostUnionFind.union(p, q);
                 }
                 case 2 -> {
-                    p = Integer.parseInt(commands.get(0));
-                    commands.remove(0);
-                    q = Integer.parseInt(commands.get(0));
-                    commands.remove(0);
-                    System.out.println("case 2: " + p + " " + q + " " + commands);
-
-                    //move(p, q);
+                    almostUnionFind.move(p, q);
                 }
                 case 3 -> {
-                    p = Integer.parseInt(commands.get(0));
-                    commands.remove(0);
-                    //ArrayList<Integer> sumEle = sumAndELe(p);
-                    //System.out.println(sumEle.get(0) + " " + sumEle.get(1));
+                    int z = io.getInt();
+                    int sum = almostUnionFind.sum(z);
+                    int count = almostUnionFind.count(z);
+                    System.out.println(count + " " + sum);
+                    io.println(count + " " + sum);
                 }
                 default -> {
                 }
             }
-
         }
-    }
-        
+        io.close();
+    }    
 
-    static void union(int p, int q){
+    public void union(int p, int q){
         /*
         * 1. Find the root of p and q
         * 2. If the roots are the same, do nothing
@@ -124,7 +95,7 @@ public class AlmostUnionFind {
      * 4. If the set with q only contains q, remove the set with q
      * 5. Update the rootsMap so the root of the set with q is the same as the root of the set with p
     */
-    static void move(int p, int q){
+    public void move(int p, int q){
         for (int i = 0; i < rootsMap.size(); i++) {
             if(rootsMap.get(i).contains(p) && rootsMap.get(i).contains(q)){
                 return;
@@ -147,22 +118,26 @@ public class AlmostUnionFind {
         }
    }
 
-   static ArrayList<Integer> sumAndELe(int p) {
-        ArrayList<Integer> sumAndEle = new ArrayList<>();
+   public int sum(int p){
         int sum = 0;
-        int ele = 0;
+        for (int i = 0; i < rootsMap.size(); i++) {
+            if (rootsMap.get(i).contains(p)) {
+            Iterator<Integer> it = setsMap.get(i).iterator();
+            while (it.hasNext()) {
+                    sum += it.next();
+            }
+            }
+        }
+        return sum;
+   }
 
-       for (int i = 0; i < rootsMap.size(); i++) {
-           if (rootsMap.get(i).contains(p)) {
-               Iterator<Integer> it = setsMap.get(i).iterator();
-               while (it.hasNext()) {
-                   sum += it.next();
-               }
-               sumAndEle.add(sum);
-               ele = setsMap.size();
-               sumAndEle.add(ele);
-           }
-       }
-       return sumAndEle;
+   public int count(int p){
+        int elements = 0;
+        for (int i = 0; i < rootsMap.size(); i++) {
+            if (rootsMap.get(i).contains(p)) {
+                elements = setsMap.get(i).size();
+            }
+        }
+        return elements;
    }
 }
