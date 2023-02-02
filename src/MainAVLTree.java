@@ -11,8 +11,9 @@ public class MainAVLTree {
         System.out.println("Max is: " + avlTree.getMax());
         System.out.println("Min is: " + avlTree.getMin());
 
-        System.out.println("Deleting 42 from Tree");
-        avlTree.delete(42);
+
+        System.out.println("Deleting 33 from Tree");
+        avlTree.delete(33);
 
         System.out.println("New Max is: " + avlTree.getMax());
 

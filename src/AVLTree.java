@@ -108,7 +108,7 @@ public class AVLTree<T extends Comparable<T>> implements  Tree<T> {
 
     private Node<T> delete(T data, Node<T> node) {
         if (node == null) {
-            return node;
+            return null;
         }
         // If the data to be deleted is less than the current node, go left
         if (data.compareTo(node.getData()) < 0) {
@@ -117,25 +117,14 @@ public class AVLTree<T extends Comparable<T>> implements  Tree<T> {
         } else if (data.compareTo(node.getData()) > 0) {
             node.setRightChild(delete(data, node.getRightChild()));
         } else {
-            // Leaf node case
-            if (node.getLeftChild() == null && node.getRightChild() == null) {
-                System.out.println("Removing a leaf node...");
-                return null;
-            }
-            // One child case
+            // Leaf node case or one child case
             if (node.getLeftChild() == null) {
-                System.out.println("Removing the right child...");
-                Node<T> tempNode = node.getRightChild();
-                node = null;
-                return tempNode;
-            } else if (node.getRightChild() == null) {
-                System.out.println("Removing the left child...");
-                Node<T> tempNode = node.getLeftChild();
-                node = null;
-                return tempNode;
+                return node.getRightChild();
+            }
+            else if (node.getRightChild() == null) {
+                return node.getLeftChild();
             }
             // Two children case
-            System.out.println("Removing item with two children...");
             node.setData(getMax(node.getLeftChild()));
             node.setLeftChild(delete(node.getData(), node.getLeftChild()));
         }
@@ -174,7 +163,7 @@ public class AVLTree<T extends Comparable<T>> implements  Tree<T> {
             // Right rotation on the parent
             return rightRotation(node);
         // If the balance factor is less than -1, the tree is right heavy
-        } else if (balanceFactor(node) < -1) {
+        } if (balanceFactor(node) < -1) {
             // If the balance factor of the right child is greater than 0, the right subtree is left heavy
             if (balanceFactor(node.getRightChild()) > 0) {
                 // Right rotation on the right child
@@ -186,17 +175,6 @@ public class AVLTree<T extends Comparable<T>> implements  Tree<T> {
         return node;
     }
 
-    private Node<T> leftRotation(Node<T> node) {
-        System.out.println("Rotating to the left on node " + node);
-        Node<T> tempRightNode = node.getRightChild();
-        Node<T> tempCentreNode = tempRightNode.getLeftChild();
-        tempRightNode.setLeftChild(node);
-        node.setRightChild(tempCentreNode);
-        newHeight(node);
-        newHeight(tempRightNode);
-        return tempRightNode;
-    }
-
     private Node<T> rightRotation(Node<T> node) {
         System.out.println("Rotating to the right on node " + node);
         Node<T> tempLeftNode = node.getLeftChild();
@@ -206,6 +184,17 @@ public class AVLTree<T extends Comparable<T>> implements  Tree<T> {
         newHeight(node);
         newHeight(tempLeftNode);
         return tempLeftNode;
+    }
+
+    private Node<T> leftRotation(Node<T> node) {
+        System.out.println("Rotating to the left on node " + node);
+        Node<T> tempRightNode = node.getRightChild();
+        Node<T> tempCentreNode = tempRightNode.getLeftChild();
+        tempRightNode.setLeftChild(node);
+        node.setRightChild(tempCentreNode);
+        newHeight(node);
+        newHeight(tempRightNode);
+        return tempRightNode;
     }
     
 }

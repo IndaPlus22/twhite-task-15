@@ -10,16 +10,14 @@
       <change beforePath="$PROJECT_DIR$/.idea/twhite-task-15.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/twhite-task-15.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/AlmostUnionFind.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/Kattio.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/Kattio.javaZone.Identifier" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/pseudo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlmostUnionFind/pseudo.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AVLTree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/AVLTree.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AlmostUnionFind.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlmostUnionFind.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AlmostUnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlmostUnionFind.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Kattio.javaZone.Identifier" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainAVLTree.class" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainAVLTree.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/MainAVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MainAVLTree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -126,7 +124,7 @@
       <workItem from="1675249644780" duration="332000" />
       <workItem from="1675250489934" duration="7983000" />
       <workItem from="1675261894636" duration="611000" />
-      <workItem from="1675347551045" duration="1210000" />
+      <workItem from="1675347551045" duration="1903000" />
     </task>
     <servers />
   </component>
