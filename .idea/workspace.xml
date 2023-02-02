@@ -5,27 +5,21 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="9a7518ba-e94b-40fd-9045-c5a58e05bc6c" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/src/AVL Tree.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AVLTree.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/AlmostUnionFindCopy.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/Tree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/modules.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/twhite-task-15.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/twhite-task-15.iml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/AlmostUnionFind.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlmostUnionFind/AlmostUnionFind.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/AlmostUnionFindCopy.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/AlmostUnionFind.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/Kattio.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/Kattio.javaZone.Identifier" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/AlmostUnionFind/pseudo.txt" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/AlmostUnionFind/pseudo.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AVLTree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AVLTree.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/AlmostUnionFind.iml" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlmostUnionFind.iml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/AlmostUnionFind.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/AlmostUnionFind.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/AlmostUnionFindCopy.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Kattio.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/Kattio.javaZone.Identifier" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/UnionFind.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/src/pseudo.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/AlmostUnionFind.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/AlmostUnionFind.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Kattio.javaZone.Identifier" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Node.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Node.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Tree.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Tree.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -55,6 +49,7 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="ASKED_SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
@@ -81,8 +76,10 @@
   </component>
   <component name="RunManager" selected="Application.AlmostUnionFind">
     <configuration name="AlmostUnionFind" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="ALTERNATIVE_JRE_PATH" value="openjdk-18" />
+      <option name="ALTERNATIVE_JRE_PATH_ENABLED" value="true" />
       <option name="MAIN_CLASS_NAME" value="AlmostUnionFind" />
-      <module name="AlmostUnionFind" />
+      <module name="twhite-task-15" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -128,6 +125,8 @@
       <workItem from="1675234973694" duration="1603000" />
       <workItem from="1675249644780" duration="332000" />
       <workItem from="1675250489934" duration="7983000" />
+      <workItem from="1675261894636" duration="611000" />
+      <workItem from="1675347551045" duration="1210000" />
     </task>
     <servers />
   </component>
